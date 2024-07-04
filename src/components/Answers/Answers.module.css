@@ -1,0 +1,88 @@
+#list,
+#multiList, 
+.col-1 {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.col-1 button {
+  margin: 5px 10px 15px;
+}
+
+/* GRID */
+#grid,
+#multiGrid,
+.col-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    justify-content: center;
+}
+.col-2 button {
+  margin: 5px 10px 15px;
+}
+.col-3 {
+  width: 842px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}  
+.col-3 button {
+  margin: 5px 10px 10px;
+}
+
+
+#list button,
+.xlarge button {
+    width: 550px;
+    justify-content: flex-start;
+    padding-left: 54px;
+}
+  
+  
+  /* MULTI-LIST */
+#multiList {
+    margin-top: 0;
+}
+#multiList button {
+    width: 100%;
+}
+  
+  /* BOOLEAN */
+#boolean {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    justify-content: center;    
+}
+
+/* buttonSize */
+.small button {
+  width: 260px; 
+  min-height: 72px;
+}
+.medium {
+  width: 700px;
+}
+.medium button {
+  width: 330px;
+  min-height: 52px;
+}
+.large button {
+  width: 462px;
+  min-height: 72px;  
+}
+.largeB button {
+  width: 462px;
+  min-height: 50px;  
+}
+
+/* buttonTextAlign */
+.center button {
+  text-align: center;
+  justify-content: center;
+}
+.left button {
+  text-align: left;
+  justify-content: flex-start;
+}

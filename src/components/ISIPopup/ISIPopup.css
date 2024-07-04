@@ -1,0 +1,81 @@
+#isiComponent {
+    z-index: 3;
+    position: relative;
+}
+#isiContainer {
+    width: 96%;
+    height: 725px;
+    background: #fff;
+    position: absolute;
+    bottom: -581px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 34px;
+    border: 11px solid #FDBA12;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 10px 40px 10px 25px;
+    transition: all .75s ease-in-out;
+    box-shadow: 0 1px 2px 4px rgba(51, 51, 51, .4);
+}
+#isiContainer.expanded {
+    bottom: 11px;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+#isiContainer.expanded > .flexContainer > div {
+    flex: 1 1 50%;
+}
+#isiContainer h4 {
+    margin-top: 10px;
+}
+#isiContainer p {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+#isiContainer a, 
+#isiContainer a:visited {
+    color: #333333;
+}
+#toggleBtn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 22px;
+    height: 22px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #979797;
+    padding: 0;
+    line-height: 0;
+}
+#toggleBtn span {
+    position: absolute;
+    height: 2px;
+    width: 22px;
+    background: #979797;
+    display: block;
+}
+#toggleBtn span:nth-child(1){
+    transform: rotate(90deg);
+    top: 10px;
+    left: 0; 
+
+}
+#toggleBtn span:nth-child(2){
+    top: 10px;
+    left: 0;
+}
+.expanded #toggleBtn span:nth-child(1),
+#toggleBtn.close span:nth-child(1){
+    transform: rotate(-45deg)
+
+}
+.expanded #toggleBtn span:nth-child(2),
+#toggleBtn.close span:nth-child(2){
+    transform: rotate(45deg)
+}

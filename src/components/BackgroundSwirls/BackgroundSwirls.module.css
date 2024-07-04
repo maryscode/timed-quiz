@@ -1,0 +1,126 @@
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    height: 1500px;
+    background: transparent url('../../assets/img/bg-clock.png') no-repeat center center;
+    background-size: 100%;
+    animation-name: rotateClock;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;     
+}
+.topContainer1 {
+    position: absolute;
+    top: -400px;
+    left: -400px;
+    width: 600px;
+    height: 600px;  
+    animation-name: rotateReverse;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
+.topContainer2 {
+    position: absolute;
+    left: -378px;
+    top: -443px;
+    width: 620px;
+    height: 620px;  
+    animation-name: rotate;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;        
+}
+.btmContainer1 {
+    position: absolute;
+    right: -420px;
+    bottom: -392px;
+    width: 630px;
+    height: 630px;
+    display: block;
+        animation-name: rotateReverse;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;   
+}
+.btmContainer2 {
+    position: absolute;
+    right: -378px;
+    bottom: -443px;
+    width: 620px;
+    height: 620px;  
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;        
+}
+.circleA {
+    position: absolute;
+    right: -13px;
+    bottom: 13px;
+    width: 630px;
+    height: 630px;
+    border: 1px solid #FDBA12;
+    border-radius: 50%;
+}
+.circleB {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 560px;
+    height: 560px;
+    border: 60px solid #9EBEDA;
+    border-radius: 50%;
+}
+
+.circleC {
+    position: absolute;
+    right: 59px;
+    bottom: -40px;  
+    width: 620px;
+    height: 620px;
+    border: 1px solid #FDBA12;
+    border-radius: 50%;
+
+}
+.btmContainer1 .circleA {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+
+.btmContainer1 .circleB {
+    right: 70px;
+    bottom: 72px;
+    width: 515px;
+    height: 515px;
+    border: 80px solid #9EBEDA;
+}
+
+.btmContainer2 .circleC {
+    right: -5px;
+    bottom: -5px;
+}
+@keyframes rotateClock{
+    0% { transform: translate(-50%, -50%) rotate(0); }
+   
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+@keyframes rotate{
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes rotateReverse{
+    0% { transform: rotate(0); }
+    100% { transform: rotate(-360deg); }
+}

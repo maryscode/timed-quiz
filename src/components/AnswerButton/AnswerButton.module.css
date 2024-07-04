@@ -1,0 +1,38 @@
+.btn button {
+    font-family: 'weissenhof_groteskregular', Arial, Helvetica, sans-serif;
+    padding: 10px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #372A8F;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+.btn button span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.btn button span span:first-child {
+  color: #FDBA12;
+  font-size: 28px;
+}
+.btn sup {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.btn button:hover,
+.btn  button:focus,
+.btn  button :active {
+  outline: none;  
+}
+
+.btn svg {
+  margin-right: 5px;
+}

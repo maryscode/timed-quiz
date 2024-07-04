@@ -1,0 +1,223 @@
+body {
+  background-size: 1024px 768px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'weissenhof_groteskregular', Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+body * {
+  box-sizing: border-box;
+}
+p {
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+a, a:visited {
+  color: #0E0078;
+}
+.hang {
+  margin-left: -6px;
+}
+#root {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  overflow: hidden;
+}
+.app {
+  width: 813px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.screen {
+  height: 100%;
+  overflow: hidden;
+}
+
+
+body.ReactModal__Body--open #header,
+body.ReactModal__Body--open #isiComponent,
+body.ReactModal__Body--open button,
+body.ReactModal__Body--open > div > * {
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'live_sourceregular';
+  color:  #0E0078;
+  font-size:55px;
+  line-height: 60px;
+  margin: 0;
+  font-weight: normal;
+}
+h2 {
+  font-family: 'live_sourceregular';
+  color:  #0E0078;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  font-weight: normal;
+}
+p {
+  margin: 0 0 10px;
+}
+button {
+  cursor: pointer;
+}
+
+
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+
+
+@font-face {
+  font-family: 'live_sourceregular';
+  src: url('./assets/fonts/livesource-webfont.woff2') format('woff2'),
+       url('./assets/fonts/livesource-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'weissenhof_groteskbold';
+  src: url('./assets/fonts/weissenhofgrotesk-bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/weissenhofgrotesk-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'weissenhof_groteskmedium';
+  src: url('./assets/fonts/weissenhofgrotesk-medium-webfont.woff2') format('woff2'),
+       url('./assets/fonts/weissenhofgrotesk-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'weissenhof_groteskregular';
+  src: url('./assets/fonts/weissenhofgrotesk-regular-webfont.woff2') format('woff2'),
+       url('./assets/fonts/weissenhofgrotesk-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pin-mediumdot';
+  src: url('./assets/fonts/PIN-MediumDot.woff2') format('woff2'),
+       url('./assets/fonts/PIN-MediumDot.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+.font-arial { font-family: Arial, Helvetica, sans-serif !important;}
+.font-regular {
+  font-family: 'weissenhof_groteskregular', Arial, Helvetica, sans-serif;
+}
+strong, 
+.font-bold {
+  font-family: 'weissenhof_groteskbold',  'Arial Black', 'Arial Bold', arial;
+  font-weight: normal;
+}
+.font-medium {
+  font-family: 'weissenhof_groteskmedium', Arial, Helvetica, sans-serif;
+}
+.font-livesource {
+  font-family: 'live_sourceregular', 'comic sans ms',  Arial, Helvetica, sans-serif;
+}
+
+
+
+.text-white {
+  color: #fff !important;
+}
+.text-yellow {
+  color: #FDBA12 !important;
+}
+.text-dkblue {
+  color: #0E0078 !important;
+}
+.text-ltblue {
+  color: #9FB6D4 !important;
+}
+
+.text-indent {
+  margin-left: 20px;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+.lowercase {
+  text-transform: lowercase !important;
+}
+
+.font-14 { /* 28*/
+  font-size: 14px;
+  line-height: 18px;
+}
+.font-15 { 
+  font-size: 15px;
+  line-height: 18px;
+}
+.font-18{ /* 36 */
+  font-size: 18px;
+  line-height: 18px;
+}
+.font-24 { /* 48 */
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.mb-0 {margin-bottom: 0 !important}
+.mb-5 {margin-bottom: 5px !important}
+.mb-10 {margin-bottom: 10px !important;}
+.mb-20 {margin-bottom: 20px !important}
+.mb-30 {margin-bottom: 30px !important}
+.mb-40 {margin-bottom: 40px !important}
+
+.mt-0 {margin-top: 0 !important}
+.mt-20 {margin-top: 20px !important;}
+.mt-30 {margin-top: 30px !important;}
+
+.pb-5 {padding-bottom: 5px !important}
+.pr-10 {padding-right: 10px !important;}
+
+/* Custom question classes */
+.wide > div { padding-left: 65px;}
+.wide > div > span { right: 734px;}
+.condensed p { margin: 0 !important}
+.condensed > div { margin-bottom: 0;}
+
+
+/* Correct/Incorrect button overrides */
+button.correct {
+  background-color: #5ED65E !important;;
+  color: #0E0078 !important;
+}
+button.correct span span:first-child { color: #0E0078 !important;}
+button.incorrect { background-color: #D90028 !important;} 
+
+.delayReveal button.clicked {
+  background: #9FB6D4 !important;
+  color: #fff !important;
+}
+.delayReveal button.clicked span span:first-child {
+  color: #FDBA12 !important;
+}
+.wide > div {
+  padding-left: 55px !important;
+}
+.leftAlign button {
+  justify-content: flex-start !important;
+}

@@ -1,0 +1,100 @@
+#instructions {
+    padding-top: 30px;
+}
+#instructions h1 {
+    text-align: left;
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+.content {
+    width: 826px;
+    text-align: left;
+}
+.box {
+    position: relative;
+    background: #FDBA12;
+    padding: 50px 50px 50px 35px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    color: #0E0078;
+    font-size: 23px;
+    line-height: 25px;
+    margin-bottom: 125px;
+}
+.box h2 {
+    font-size: 27px;
+}
+.box li {
+    position: relative;
+    margin-bottom: 30px;
+    list-style: none;
+}
+.box li div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -200px;
+    opacity: 0;
+    width: 178px;
+    height: 40px;
+    padding: 0 10px 0 0;
+    background: #fff;
+    color: #0E0078;
+    font-family: 'live_sourceregular';
+    text-align: right;
+    border-radius: 30px;
+    line-height: 40px;
+    font-size: 33px;
+    animation: numberSlideIn;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;  
+    animation-fill-mode: forwards;  
+}
+.box li:nth-of-type(1) div { animation-delay: 0; }
+.box li:nth-of-type(2) div { animation-delay: 0.5s; }
+.box li:nth-of-type(3) div { animation-delay: 1.0s; }
+.box li:nth-of-type(4) div { animation-delay: 1.5s; }
+
+@keyframes numberSlideIn{
+    0% { opacity: 0; left: -400px}
+    100% { opacity: 1; left: -200px }
+}
+
+
+.box li span {
+    display: block;
+    margin-left: -20px;
+    opacity: 0;
+    animation: textSlideIn;
+    animation-duration: .25s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;  
+    animation-fill-mode: forwards;  
+}
+.box li:nth-of-type(1) span { animation-delay: .35s; }
+.box li:nth-of-type(2) span { animation-delay: 0.85s; }
+.box li:nth-of-type(3) span { animation-delay: 1.35s; }
+.box li:nth-of-type(4) span { animation-delay: 1.85s; }
+
+@keyframes textSlideIn{
+    0% { opacity: 0; margin-left: -20px}
+    100% { opacity: 1; margin-left: 0; }
+}
+
+
+.box button {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btnStart {
+    position: absolute;
+    bottom: 170px;
+    left: 408px;
+    display: block;
+    width: 208px;
+    height: 42px;
+}
+

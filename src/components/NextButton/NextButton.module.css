@@ -1,0 +1,30 @@
+.nextBtn {
+  font-family: 'weissenhof_groteskmedium', Arial, Helvetica, sans-serif;
+  
+  padding: 0 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 25px;
+  text-transform: uppercase;  
+  position: absolute;
+  bottom: 197px;
+  right: 105px;
+  background-color: #FDBA12;
+  color: #0E0078;
+  font-weight: normal;
+  width: 126px;
+  height: 52px;
+  min-height: 52px;
+  margin: 0;  
+}
+.nextBtn .arrow { color: #fff }
+.disabled {
+  opacity: .3;
+  cursor:default;
+}

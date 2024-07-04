@@ -1,0 +1,70 @@
+.heading {
+    margin: 0;
+}
+h3, h4 {
+    color: #0E0078;
+    margin: 0 0 4px;
+    font-family: 'weissenhof_groteskbold',  'Arial Black', 'Arial Bold', arial;
+    font-weight: normal;
+}
+h3 {
+    margin: 10px 0 5px;
+}
+h3:first-child {
+    margin-top: 0;
+}
+p {
+    margin: 0;
+}
+sub {
+    line-height: 1;
+}
+.col2 {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.isiNote {
+    position: absolute;
+    bottom: 150px;
+    right: 99px;
+    font-family: 'weissenhof_groteskmedium', Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.03;
+}
+.isiFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 25px 0 0;
+}
+.logoContainer {
+    margin-right: 24px;
+}
+.copyright {
+    font-size: 11px;
+    line-height: 1;
+}
+.isiFooter button {
+    margin-left: auto;
+}
+.logoMyovant {
+    width: 96px;
+    height: auto;   
+    padding-right: 10px;
+    border-right: 1px solid #000;
+    margin-right: 10px;
+}
+.logoPfizer {
+    width: 71px;
+    height: auto;
+}
+
+#collapsedContainer .col1 {
+    flex: 1 1 20%;
+}
+#collapsedContainer .col2 {
+    flex: 1 1 63%;
+}

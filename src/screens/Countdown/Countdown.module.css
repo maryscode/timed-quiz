@@ -1,0 +1,41 @@
+.heading {
+    color: #fff;
+    font-size: 75px;
+    margin: 0;
+    position: absolute;
+    top: 210px;
+    width: 100%;
+    text-align: center;
+}
+.btnStart {
+    position: absolute;
+    bottom: 170px;
+    left: 408px;
+    display: block;
+    width: 208px;
+    height: 42px;
+}
+.numbers {
+    font-family: 'pin-mediumdot', Arial, Helvetica, sans-serif;
+    font-size: 250px;
+    line-height: 1;
+    color: #FDBA12;
+    margin-bottom: 20px;
+    animation: glow 1s ease-in-out infinite backwards;
+}
+.glow {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes glow {
+    0% { text-shadow: 0 0 0 #fff; }
+    50% {
+      text-shadow: 0 0 30px rgba(255,255,255, .25), 0 0 40px rgba(255,255,255, .25), 0 0 50px rgba(255,255,255, .25), 0 0 60px rgba(255,255,255, .25), 0 0 70px rgba(255,255,255, .25), 0 0 80px rgba(255,255,255, .25), 0 0 100px rgba(255,255,255, .25);
+    }
+    100% {
+        text-shadow: 0 0 50px transparent, 0 0 60px transparent, 0 0 70px transparent, 0 0 80px transparent, 0 0 90px transparent, 0 0 100px transparent, 0 0 130px transparent;
+      }
+  }

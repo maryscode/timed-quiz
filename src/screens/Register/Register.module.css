@@ -1,0 +1,88 @@
+#formContainer h1 {
+    margin: 0 0 50px;
+}
+#formContainer form {
+    width: 60%;
+    margin-bottom: 50px;
+}
+#formContainer label {
+    font-size: 25px;
+    line-height: 32px;
+    color: #fff;
+}
+#formContainer .required {
+    font-size: 15px;
+    line-height: 19px;
+    color: #9FB6D4;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto 40px;
+}
+.row > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#formContainer input,
+#formContainer select {
+    height: 63px;
+    width: 281px;
+    border: none;
+    font-size: 25px;
+    font-family: 'weissenhof_groteskregular', Arial, Helvetica, sans-serif;
+    color: #fff;
+    outline: none;
+    background: rgba(216, 216, 216, .5);
+    border-radius: 50px;
+    padding: 0 66px 0 20px;
+}
+
+#formContainer select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    background-image: url('../../assets/img/dropdown-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: auto 63px;
+    background-position: top 0 right 10px;
+}
+#formContainer   select option{
+    font-family: 'weissenhof_groteskregular', Arial, Helvetica, sans-serif;
+}
+
+.disabled {
+    opacity: .3;
+}
+#formContainer button {
+    margin: 30px auto 0;
+    padding: 0 30px;
+    position: absolute;
+    bottom: 87px;
+    left: 50%;
+    transform: translate(-50%, 0);    
+}
+.shake {
+    animation: shakeAnim;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;  
+    animation-fill-mode: backwards; 
+}
+@keyframes shakeAnim {
+    0% {left: 50%}
+    1% {left: 49%}
+    2% {left: 51%}
+    3% {left: 48%}
+    4% {left: 52%}
+    5% {left: 49%}
+    6% {left: 51%}
+    7% {left: 50%}
+  }

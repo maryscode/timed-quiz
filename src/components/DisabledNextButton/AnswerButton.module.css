@@ -1,0 +1,40 @@
+.btn button {
+    font-family: 'weissenhof_groteskregular', Arial, Helvetica, sans-serif;
+    width: 254px;
+    min-height: 72px;
+    margin: 5px 10px 10px;
+    padding: 0 30px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #372A8F;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 25px;
+    text-transform: uppercase;
+}
+.btn button span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.btn button span span {
+  color: #FDBA12;
+  font-size: 28px;
+}
+
+
+.btn button:hover,
+.btn  button:focus,
+.btn  button :active {
+  outline: none;  
+}
+
+.btn svg {
+  margin-right: 5px;
+}

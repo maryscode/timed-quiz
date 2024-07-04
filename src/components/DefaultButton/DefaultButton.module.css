@@ -1,0 +1,46 @@
+.btn {
+    background: #FDBA12;
+    height: 41px;
+    padding: 0 20px;
+    min-height: 0;
+    text-align: center;
+    color: #0E0078;
+    font-family: 'weissenhof_groteskmedium', Arial, Helvetica, sans-serif;
+    line-height: 41px;
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+.btn span {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+    transition: .2s;
+    margin-left: 10px
+}
+
+.btn:hover {
+
+}
+.btn:hover span {
+    transform: translateX(5px);
+    
+}
+.btn:disabled,
+.btn[disabled] {
+    opacity: .3
+}
+.btn:disabled span,
+.btn[disabled] span {
+    /* display: none; */
+}
+.btn:disabled:hover span,
+.btn[disabled]:hover span {
+    margin-right: 0;
+    padding-right: 0;
+}

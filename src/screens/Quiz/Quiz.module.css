@@ -1,0 +1,471 @@
+#quiz {
+  display: block
+}
+.scoreSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  background: radial-gradient(circle at center, rgba(255,255,255, .35) 0, transparent 40%)
+}
+
+
+.scoreSection h1 {
+  color: #FDBA12;
+  margin-bottom: 0;
+  font-size: 60px;
+}
+.scoreSection p {
+  margin-top: 0;
+  font-size: 20px;
+}
+.headingCongrats {
+  font-size: 60px;
+}
+
+
+.scoreContainer {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, .5));
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0 20px;
+}
+
+.yourScore {
+  font-size: 49px;
+  line-height: .8;
+  margin-bottom: auto;
+  text-align: right;
+}
+.yourScore span {
+  display: block;
+  margin-right: 40px;
+}
+
+.scoreText {
+  font-size: 84px;
+  line-height: 1;
+  position: relative;
+  height: 160px;
+  width: 160px;
+  
+  margin: 0 30px;
+  
+}
+.scoreText div {
+  position: absolute
+}
+
+
+.scoreText span {
+  font-size: 23px;
+  display: block;
+  line-height: 0;
+}
+.fractionLine {
+  display: block;
+  width: 164px;
+  height: 5px;
+  border-radius: 4px;
+  background: #FDBA12;
+  transform: rotate(-54deg);
+}
+.yourScore,
+.secondsText {
+  width: 160px;
+} 
+
+.secondsText {
+  font-size: 30px;
+  line-height: 1;
+  text-align: left;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.btnContainer button {
+  margin: 0 20px;
+  width: 116px;
+  padding: 0;
+  min-width: 0;
+}
+
+.btnContainer button.correct {
+  background-color: #5ED65E;
+  color: #0E0078;
+}
+
+.hang {
+  margin-left: -10px;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.questionSection {
+  color: #0E0078;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #FDBA12;
+  border-bottom-left-radius: 31px;
+  border-bottom-right-radius: 31px;
+  width: 813px;
+  /* min-height: 104px; */
+  padding: 20px 20px 18px 0;
+  margin: 129px auto 40px;
+}
+.questionText {
+  font-size: 23px;
+  line-height: 25px;
+  /* text-transform: uppercase; */
+  font-weight: normal;
+}
+.questionText sup {
+  font-size: 12px;
+}
+.number {
+  display: block;
+  position: absolute;
+  right: 704px;
+  font-size: 38px;
+  line-height: 16px;
+  font-family: 'live_sourceregular', 'comic sans ms',  Arial, Helvetica, sans-serif;
+}
+.ref {
+  margin-top: 5px;
+  font-size: 13px;
+  line-height: 15px;
+  /* margin-right: 50px; */
+}
+.questionText,
+.ref { padding-left: 88px;}
+
+.ref a {
+  text-decoration: none;
+  color: #0E0078;
+}
+.ref p {
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 15px;
+}
+.ref p:last-child {
+  margin-bottom: 0;
+}
+.ref sup {
+  font-size: 7px;
+  line-height: 0;
+}
+
+#list > div {
+  
+}
+#multiGrid > div {
+  
+}
+#multiList > div {
+  
+}
+#boolean > div {
+  
+}
+
+.questionCount {
+  margin-bottom: 20px;
+}
+
+.questionCount span {
+  font-size: 28px;
+}
+
+.questionText {
+  margin-bottom: 12px;
+  position: relative;
+  width: 100%;  
+  font-family: 'weissenhof_groteskbold',  'Arial Black', 'Arial Bold', arial;
+  text-transform: uppercase;
+}
+
+.timerText {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answerSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#progressContainer {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  text-align: center;
+}
+
+#progressBg {
+  position: absolute;
+  top: 68px;
+  left: 115px;
+  height: 15px;
+  width: 132px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.73 );
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 15px;
+  color: #0E0078;
+}
+#progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 50%;
+  border-radius: 20px;
+  background: #FDBA12;
+}
+#progressCount {
+  position: relative;
+  width: 100%;
+}
+#stopwatch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 124px;
+  height: 136px;
+  background: transparent url(../../assets/img/stopwatch_countdown.svg) no-repeat 0 0;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#timer {  
+  padding-bottom: 20px;
+}
+
+
+
+
+.correctAnswersSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 41px;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+.correctAnswersSection p {
+  font-size: 18px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #D8D8D8;
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FDBA12;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #FDBA12;
+}
+.correctAnswersSection:after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: 194px;
+  height: 18px;
+  width: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 4px -5px 0 0 #181443;
+  right: 61px;
+  
+}
+#questionsAnswers {
+  margin-top: 10px;
+  height: 277px;
+  overflow-y: scroll;
+  width: 100%;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative; 
+}
+
+
+.qaContainer {
+  background: #EDEDF3;
+  border-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 10px;
+  position: relative;
+}
+
+#questionsAnswers h5 {
+ font-size: 20px;
+ margin: 0;
+ color: #0E0078;
+}
+
+#questionsAnswers .incorrect {
+  color: #D90028;
+}
+#questionsAnswers li.incorrect {
+  color: #0E0078;
+}
+#questionsAnswers ul {
+  list-style: none;
+  margin: 0;
+  padding:0;
+  color: #0E0078
+}
+#questionsAnswers > div > div > div {
+  padding: 15px 150px 15px 18px;
+}
+
+#questionsAnswers > div:first-child h5 {
+  font-family: 'weissenhof_groteskmedium', Arial, Helvetica, sans-serif;
+  display: flex;
+  font-weight: normal;
+}
+#questionsAnswers > div:first-child h5 > span:first-child {
+  display: inline-block;
+  flex-grow: 0;
+  flex-basis: 25px;
+  flex-shrink: 0;
+  margin-right: 5px;
+  text-align: right;
+}
+#questionsAnswers li {
+  margin: 5px 0 5px 30px;
+  font-size: 17px;
+  font-family: 'weissenhof_groteskmedium', Arial, Helvetica, sans-serif; 
+  min-height: 21px;
+}
+
+
+
+.questionPanel {
+  position: relative
+}
+.questionPanel sup {
+  line-height: 1;
+  font-size: 50%;
+}
+.toggleIcon {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 28px;
+  height: 28px;
+  
+  cursor: pointer;
+}
+.toggleIcon .closeIcon {
+  display: none;
+}
+
+.toggleIcon .closeIcon span:nth-of-type(1),
+.toggleIcon .closeIcon span:nth-of-type(2) {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  background: #979797;
+}
+.toggleIcon .closeIcon span:nth-of-type(1){
+  transform: rotate(-45deg);
+  top: 12px;
+  left: 3px; 
+  display: block;
+}
+.toggleIcon .closeIcon span:nth-of-type(2){
+  transform: rotate(45deg);
+  top: 12px;
+  left: 3px;
+  display: block;
+}
+.toggleIcon .plusIcon  {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background: #fff;
+  font-size: 30px;
+  color: #FDBA12;
+  font-family: 'weissenhof_groteskbold',  'Arial Black', 'Arial Bold', arial;
+  line-height: 32px;
+  text-align: center;
+}
+
+
+.homeBtn,
+.homeBtn:visited {
+  background: transparent url(../../assets/img/homeicon.svg) no-repeat 0 center;
+  background-size: 73px auto;
+  min-height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #FDBA12;
+  text-decoration: none;
+  width: 388px;
+  padding-left: 90px;
+  font-size: 18px;
+  font-family: 'weissenhof_groteskmedium', Arial, Helvetica, sans-serif;
+  margin: 15px auto;
+  cursor: pointer;
+  color: #FDBA12;
+}
+
+.footnoteLinks {
+  position: absolute;
+  bottom: 150px;
+  right: 99px;
+  font-family: 'weissenhof_groteskmedium', Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.03;
+}
+.footnoteLinks span {
+  cursor: pointer;
+  text-decoration: underline;
+}

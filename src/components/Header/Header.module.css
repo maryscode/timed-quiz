@@ -1,0 +1,41 @@
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+#isi-expand {
+width: 980px;
+height: 140px;
+display: block;
+position: absolute;
+bottom: 0;
+}
+#logo {
+    position: absolute;
+    width: 152px;
+    height: 73px;
+    top: 31px;
+    right: 58px;
+    background: transparent url('../../assets/img/logo-orgovyx.svg') no-repeat 0 0;
+    background-size: 100%;    
+}
+#pi-popup {
+    position: absolute;
+    width: 330px;
+    height: 41px;
+    font-size: 18px;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0E0078;
+    box-shadow: none;
+    border: none;
+}
